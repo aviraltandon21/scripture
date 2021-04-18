@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scripture</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+      
+      <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+      <style>
+          body {
+            font-family: Arvo, serif;
+    background: url("image.png") no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 85px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif, 'arial';
+    font-weight: 600;
+    font-size: 72px;
+    color: black;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif, 'arial';
+    font-weight: 800;
+    font-size: 20px;
+    color: #808080;
+    line-height: 1.5;
+}
+.navbar-custom, .footer {
+    background-color: #62aacf;
+    border-color: #499cc7;
+    background-image: -webkit-gradient(linear, left 0%, left 100%, from(#89bfdb), to(#62aacf));
+    background-image: -webkit-linear-gradient(top, #89bfdb, 0%, #62aacf, 100%);
+    background-image: -moz-linear-gradient(top, #89bfdb 0%, #62aacf 100%);
+    background-image: linear-gradient(to bottom, #89bfdb 0%, #62aacf 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff89bfdb', endColorstr='#ff62aacf', GradientType=0);
+  }
+  .navbar-custom .navbar-brand {
+    color: #ffffff;
+  }
+  .navbar-custom .navbar-brand:hover,
+  .navbar-custom .navbar-brand:focus {
+    color: #e6e6e6;
+    background-color: transparent;
+  }
+  .navbar-custom .navbar-text {
+    color: #ffffff;
+  }
+  .navbar-custom .navbar-nav > li:last-child > a {
+    border-right: 1px solid #499cc7;
+  }
+  .navbar-custom .navbar-nav > li > a {
+    color: #ffffff;
+    border-left: 1px solid #499cc7;
+  }
+  .navbar-custom .navbar-nav > li > a:hover,
+  .navbar-custom .navbar-nav > li > a:focus {
+    color: #c0c0c0;
+    background-color: transparent;
+  }
+  .navbar-custom .navbar-nav > .active > a,
+  .navbar-custom .navbar-nav > .active > a:hover,
+  .navbar-custom .navbar-nav > .active > a:focus {
+    color: #c0c0c0;
+    background-color: #499cc7;
+    background-image: -webkit-gradient(linear, left 0%, left 100%, from(#499cc7), to(#70b1d3));
+    background-image: -webkit-linear-gradient(top, #499cc7, 0%, #70b1d3, 100%);
+    background-image: -moz-linear-gradient(top, #499cc7 0%, #70b1d3 100%);
+    background-image: linear-gradient(to bottom, #499cc7 0%, #70b1d3 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff499cc7', endColorstr='#ff70b1d3', GradientType=0);
+  }
+  .navbar-custom .navbar-nav > .disabled > a,
+  .navbar-custom .navbar-nav > .disabled > a:hover,
+  .navbar-custom .navbar-nav > .disabled > a:focus {
+    color: #cccccc;
+    background-color: transparent;
+  }
+  .navbar-custom .navbar-toggle {
+    border-color: #dddddd;
+  }
+  .navbar-custom .navbar-toggle:hover,
+  .navbar-custom .navbar-toggle:focus {
+    background-color: #dddddd;
+  }
+  .navbar-custom .navbar-toggle .icon-bar {
+    background-color: #cccccc;
+  }
+  .navbar-custom .navbar-collapse,
+  .navbar-custom .navbar-form {
+    border-color: #479bc7;
+  }
+  .navbar-custom .navbar-nav > .dropdown > a:hover .caret,
+  .navbar-custom .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #c0c0c0;
+    border-bottom-color: #c0c0c0;
+  }
+  .navbar-custom .navbar-nav > .open > a,
+  .navbar-custom .navbar-nav > .open > a:hover,
+  .navbar-custom .navbar-nav > .open > a:focus {
+    background-color: #499cc7;
+    color: #c0c0c0;
+  }
+  .navbar-custom .navbar-nav > .open > a .caret,
+  .navbar-custom .navbar-nav > .open > a:hover .caret,
+  .navbar-custom .navbar-nav > .open > a:focus .caret {
+    border-top-color: #c0c0c0;
+    border-bottom-color: #c0c0c0;
+  }
+  .navbar-custom .navbar-nav > .dropdown > a .caret {
+    border-top-color: #ffffff;
+    border-bottom-color: #ffffff;
+  }
+  @media (max-width: 767) {
+    .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+      color: #ffffff;
+    }
+    .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+      color: #c0c0c0;
+      background-color: transparent;
+    }
+    .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+      color: #c0c0c0;
+      background-color: #499cc7;
+    }
+    .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a,
+    .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+      color: #cccccc;
+      background-color: transparent;
+    }
+  }
+  .navbar-custom .navbar-link {
+    color: #ffffff;
+  }
+  .navbar-custom .navbar-link:hover {
+    color: #c0c0c0;
+  }
+
+/* ///// inputs /////*/
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+    font-size: 0.95em;
+    color: #999;
+    top: -5px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+}
+
+.styled-input {
+    float: left;
+    width: 293px;
+    margin: 1rem 0;
+    position: relative;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px){
+    .styled-input {
+        width:100%;
+    }
+}
+
+.styled-input label {
+    color: #999;
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.styled-input.wide { 
+    width: 650px;
+    max-width: 100%;
+}
+
+input,
+textarea {
+    padding: 30px;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus { outline: 0; }
+
+input:focus ~ span,
+textarea:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+
+textarea {
+    width: 100%;
+    min-height: 15em;
+}
+
+.input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+}
+
+.submit-btn {
+    float: right;
+    padding: 7px 35px;
+    border-radius: 60px;
+    display: inline-block;
+    background-color: #4b8cfb;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
+              0 2px 10px 0 rgba(0,0,0,0.07);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(1px);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
+              0 1px 1px 0 rgba(0,0,0,0.09);
+}
+
+@media (max-width: 768px) {
+    .submit-btn {
+        width:100%;
+        float: none;
+        text-align:center;
+    }
+}
+
+input[type=checkbox] + label {
+  color: #ccc;
+  font-style: italic;
+} 
+
+input[type=checkbox]:checked + label {
+  color: #f00;
+  font-style: normal;
+}
+      </style>
+  </head>
+  <body>
+
+
+  <nav role="navigation" class="navbar navbar-custom navbar-fixed-top">
+      
+      <div class="container-fluid">
+        
+          <div class="navbar-header">
+          
+              <a class="navbar-brand">Scripture</a>
+              <button type="button" class="navbar-toggle" data-target="#navbarCollapse" data-toggle="collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              
+              </button>
+          </div>
+          <div class="navbar-collapse collapse" id="navbarCollapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.php">Home</a></li>
+                <li class="active"><a href="#">Help</a></li>
+                <li><a href="about.html">About Us</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#loginModal" data-toggle="modal">Login</a></li>
+              </ul>
+          
+          </div>
+      </div>
+  
+  </nav>
+
+  <div class="container">
+	<div class="row">
+			<h1>contact us</h1>
+	</div>
+	<div class="row">
+			<h4 style="text-align:center">We'd love to hear from you!</h4>
+	</div>
+	<div class="row input-container">
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" required />
+					<label>Name</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input">
+					<input type="text" required />
+					<label>Email</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input" style="float:right;">
+					<input type="text" required />
+					<label>Phone Number</label> 
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<textarea required></textarea>
+					<label>Message</label>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="btn-lrg submit-btn">Send Message</div>
+			</div>
+	</div>
+</div>
+
+  
+
+    
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+    <script src="indexxx.js"></script>
+  </body>
+</htm
