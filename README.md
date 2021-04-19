@@ -21,6 +21,6 @@ Then this is the place you want . Store your personal notes securely without any
   <img src="/screenshots/mobile_2.jpg" width="400" /> 
 </p>
 <p float="left">
-  <img src="/screenshots/desktop_1.jpg" width="450" />
-  <img src="/screenshots/desktop_2.jpg" width="450" /> 
+  <img src="/screenshots/desktop_1.jpg" width="400" />
+  <img src="/screenshots/desktop_2.jpg" width="400" /> 
 </p>
