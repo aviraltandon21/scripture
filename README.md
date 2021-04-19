@@ -1,4 +1,4 @@
-# Scripture
+# Scripture ( http://scripture.host20.uk/ )
 A place to store all your notes
 
 ### One stop solution for all ###
